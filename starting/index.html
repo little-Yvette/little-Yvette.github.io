@@ -1,0 +1,161 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>建站记录 - A Tiny Park</title><meta name=Description content><meta property="og:title" content="建站记录"><meta property="og:description" content="大致的流程是：&mldr; 注意这里~ 这篇记录里提供的方法很有可能不是最优或者正确的，说不定只是歪打正着了，。 预先准备 以下操作基于 windows 平台 使"><meta property="og:type" content="article"><meta property="og:url" content="https://wisterias.one/starting/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-02-21T21:35:33+08:00"><meta property="article:modified_time" content="2023-03-18T14:46:08+08:00"><meta property="og:site_name" content="A Tiny Park"><meta name=twitter:card content="summary"><meta name=twitter:title content="建站记录"><meta name=twitter:description content="大致的流程是：&mldr; 注意这里~ 这篇记录里提供的方法很有可能不是最优或者正确的，说不定只是歪打正着了，。 预先准备 以下操作基于 windows 平台 使"><meta name=application-name content="A Tiny Park"><meta name=apple-mobile-web-app-title content="A Tiny Park"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://wisterias.one/starting/><link rel=prev href=https://wisterias.one/brush/><link rel=next href=https://wisterias.one/trees/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"建站记录","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/wisterias.one\/starting\/"},"genre":"posts","keywords":"hugo建站","wordcount":2006,"url":"https:\/\/wisterias.one\/starting\/","datePublished":"2023-02-21T21:35:33+08:00","dateModified":"2023-03-18T14:46:08+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"L."},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="A Tiny Park">星期天的公园</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>文档 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>盒子 </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="A Tiny Park">星期天的公园</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><a class=menu-item href=/posts/ title>文档 </a><a class=menu-item href=/tags/ title>标签 </a><a class=menu-item href=/categories/ title>盒子 </a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">建站记录</h1><div class=post-meta><div class=post-meta-line>&nbsp;<span class=post-category>included in <a href=/categories/%E8%AE%B0%E5%BD%95/><i class="fa-regular fa-folder-open" aria-hidden=true></i>记录</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-02-21>2023-02-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;2006 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;5 minutes&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#预先准备>预先准备</a></li><li><a href=#hugo部分>Hugo部分</a><ul><li><a href=#下载hugo>下载hugo</a></li><li><a href=#配置环境>配置环境</a></li><li><a href=#安装主题>安装主题</a></li><li><a href=#网站装修>网站装修</a></li></ul></li><li><a href=#部署托管静态网站>部署托管静态网站</a><ul><li><a href=#上传至-github-pages>上传至 Github Pages</a></li><li><a href=#自定义域名>自定义域名</a></li><li><a href=#后续更新>后续更新</a></li></ul></li><li><a href=#存储图片>存储图片</a></li></ul></nav></div></div><div class=content id=content><p>大致的流程是：&mldr;</p><div class="details admonition warning open"><div class="details-summary admonition-title"><i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden=true></i>注意这里~<i class="details-icon fas fa-angle-right fa-fw" aria-hidden=true></i></div><div class=details-content><div class=admonition-content>这篇记录里提供的方法很有可能不是最优或者正确的，说不定只是歪打正着了，。</div></div></div><h2 id=预先准备>预先准备</h2><p>以下操作基于 windows 平台</p><p>使用到工具/平台：</p><ul><li>终端，比如：<a href="https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3" title=微软关于Powershell的文档 target=_blank rel="noopener noreffer">Powershell</a>，<a href=https://git-scm.com/downloads title=Git下载官网 target=_blank rel="noopener noreffer">Git Bash</a></li><li><a href=https://code.visualstudio.com/ target=_blank rel="noopener noreffer">Visual Studio Code</a></li><li><a href=https://docs.github.com/zh/get-started target=_blank rel="noopener noreffer">Github</a>（需要注册账号）</li><li><a href=https://gohugo.io/ target=_blank rel="noopener noreffer">Hugo官网</a></li><li>还没想好</li></ul><p>参考：</p><ul><li><a href=https://gohugo.io/ target=_blank rel="noopener noreffer">Hugo官网</a>（hugo的介绍、说明文档、安装下载方式以及模板都可以在官网找到，✨有些模板也会提供比较详细的用户文档，从安装模板到自定义网站）</li><li><a href=https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web target=_blank rel="noopener noreffer">MDN文档——Web入门概述</a> 👈 这里也有<strong><ruby>HTML<rt>超文本标记语言</rt></ruby></strong>，<strong><ruby>CSS<rt>层叠样式表</rt></ruby></strong>等等教程，能看得懂一点的话，照葫芦画瓢就容易些；</li><li><a href=https://hongtaoh.com/cn/2021/03/02/personal-website-tutorial/#%e5%89%8d%e6%9c%9f%e5%87%86%e5%a4%87 target=_blank rel="noopener noreffer">郝鸿涛——如何零基础免费搭建个人网站（2021-03-02）</a></li><li><a href=https://irithys.com/categories/%E5%9C%A8%E5%B0%8F%E5%B1%8B%E9%87%8C%E6%94%BE%E4%B8%80%E6%9C%B5%E8%8A%B1%E5%84%BF/ target=_blank rel="noopener noreffer">山茶花舍</a>。这里有不少有意思的教程，而且网站很！可！爱！</li></ul><h2 id=hugo部分>Hugo部分</h2><h3 id=下载hugo>下载hugo</h3><p><a href=https://gohugo.io/installation/ target=_blank rel="noopener noreffer">Hugo官网安装页</a>有适合不同系统环境的安装说明，并且介绍了多种安装方式。我是在 prebuilt binaries 这一节点击 <a href=https://github.com/gohugoio/hugo/releases/tag/v0.111.2 target=_blank rel="noopener noreffer">latest release</a>，进入最新版本发布页面，下滑至页面尾端展开 Assets，下载了 <code>hugo_extended_0.110.0_windows-amd64.zip</code>。</p><p>将压缩包解压，得到 <code>exe</code>，<code>license</code> 和 <code>README</code> 文件，在磁盘里建一个名为 <code>hugo</code> 的文件夹，在这个文件夹之下再创建一个叫做 <code>bin</code> 的文件夹，将解压后的 <code>exe</code> 文件拖到 <code>bin</code> 文件夹中。</p><h3 id=配置环境>配置环境</h3><p>接下来需要将 <code>hugo</code> 添加到系统路径，复制含有 <code>hugo.exe</code> 文件的 <code>bin</code> 文件夹路径。然后可以按下 <code>Win+X</code>，或者以其他习惯的方式找到<strong>系统——高级系统设置——环境变量——用户变量——选中 path 变量并编辑添加</strong>——粘贴刚刚复制下的路径。</p><div class="details admonition note"><div class="details-summary admonition-title"><i class="icon fas fa-pencil-alt fa-fw" aria-hidden=true></i>如果报错：得到的不是内部或外部命令，也不是可运行的程序或批处理文件<i class="details-icon fas fa-angle-right fa-fw" aria-hidden=true></i></div><div class=details-content><div class=admonition-content>需要检查一下含有 git.exe 的 bin 文件夹和 git-core 文件夹是否也在 path 变量中。如果不在，之后运行 git 命令时，可能会显示这个错误。如果先安装的是Github Desktop 这样一个用于使用 Git 的图形操作界面客户端，需要注意它虽然也含有一个旧版本的 git-for-windows，但在目录挺深的位置才能找到含有 git.exe 的 bin 文件夹，需要将这个路径添加至上面的 path 变量中才行。</div></div></div><p>在终端输入<code>hugo version</code>，如果显示了版本号，则表示配置正确o(<em>￣▽￣</em>)ブ</p><h3 id=安装主题>安装主题</h3><p>我先是安装了 PaperMod 和 Tranquilpeak 两个模板，最后换了这个 LoveIt，现在又觉得 Stack 也很好。新手如我，建议选一些文件结构和用户文档都清晰的主题开始折腾。</p><p>安装主题的方法大同小异，以我安装这个主题使用的命令为例：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=cl><span class=nb>pwd </span>              <span class=c># 查看当前路径</span>
+</span></span><span class=line><span class=cl><span class=nb>cd </span><span class=n>C:</span><span class=p>\</span>            <span class=c># 转至 C 盘或者想放置网站文件夹的路径</span>
+</span></span><span class=line><span class=cl><span class=n>hugo</span> <span class=n>new</span> <span class=n>site</span> <span class=n>forest</span>  
+</span></span><span class=line><span class=cl>        <span class=c>#这行命令会在当前路径创建一个名为 forest 的 hugo 网站文件夹</span>
+</span></span><span class=line><span class=cl><span class=nb>cd </span><span class=n>forest</span>         <span class=c># 转到 forest 目录</span>
+</span></span><span class=line><span class=cl><span class=n>git</span> <span class=n>clone</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>github</span><span class=p>.</span><span class=n>com</span><span class=p>/</span><span class=n>dillonzq</span><span class=p>/</span><span class=n>LoveIt</span><span class=p>.</span><span class=py>git</span> <span class=n>themes</span><span class=p>/</span><span class=n>LoveIt</span> 
+</span></span><span class=line><span class=cl>        <span class=c># 以克隆方式安装主题</span>
+</span></span><span class=line><span class=cl><span class=nb>echo </span><span class=s2>&#34;theme = &#39;LoveIt&#39;&#34;</span> <span class=p>&gt;&gt;</span> <span class=n>config</span><span class=p>.</span><span class=py>toml</span> 
+</span></span><span class=line><span class=cl>        <span class=c># 在配置文件中指定模板名字，否则会找不到模板</span>
+</span></span><span class=line><span class=cl><span class=n>hugo</span> <span class=n>new</span> <span class=n>posts</span><span class=p>/</span><span class=nb>first-post</span><span class=p>.</span><span class=nb>md </span><span class=c># 创建一篇博客</span>
+</span></span><span class=line><span class=cl><span class=n>hugo</span> <span class=n>server</span> <span class=n>-D</span> <span class=c># 本地预览网站</span>
+</span></span></code></pre></td></tr></table></div></div><p>使用 <code>hugo new site</code> 命令后，在网站文件夹内会生成如下的文件夹和文件：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-Markdown data-lang=Markdown><span class=line><span class=cl>archetypes
+</span></span><span class=line><span class=cl>    | default.md
+</span></span><span class=line><span class=cl>assets
+</span></span><span class=line><span class=cl>content
+</span></span><span class=line><span class=cl>data
+</span></span><span class=line><span class=cl>layouts
+</span></span><span class=line><span class=cl>public
+</span></span><span class=line><span class=cl>static
+</span></span><span class=line><span class=cl>themes               
+</span></span><span class=line><span class=cl>config.toml                  # 配置文件
+</span></span></code></pre></td></tr></table></div></div><p>运行 <code>git clone</code> 后 themes 文件夹之下会得到一个主题文件夹，目录如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-Markdown data-lang=Markdown><span class=line><span class=cl>.circleci
+</span></span><span class=line><span class=cl>.git
+</span></span><span class=line><span class=cl>.github
+</span></span><span class=line><span class=cl>.husky
+</span></span><span class=line><span class=cl>archetypes
+</span></span><span class=line><span class=cl>assets
+</span></span><span class=line><span class=cl>exampleSite
+</span></span><span class=line><span class=cl>i18n
+</span></span><span class=line><span class=cl>images
+</span></span><span class=line><span class=cl>layouts
+</span></span><span class=line><span class=cl>resources
+</span></span><span class=line><span class=cl>src
+</span></span><span class=line><span class=cl>static
+</span></span><span class=line><span class=cl>.babelrc
+</span></span><span class=line><span class=cl>.gitignore
+</span></span><span class=line><span class=cl>config.toml
+</span></span><span class=line><span class=cl>go.mod
+</span></span><span class=line><span class=cl>LICENSE
+</span></span><span class=line><span class=cl>package.json
+</span></span><span class=line><span class=cl>package-lock.json
+</span></span><span class=line><span class=cl>README.md
+</span></span><span class=line><span class=cl>README.zh-cn.md
+</span></span><span class=line><span class=cl>theme.toml
+</span></span></code></pre></td></tr></table></div></div><p>有三种主题安装方式，使用 <code>git clone</code>，<code>git submodule</code> 以及直接下载主题压缩包，放到themes文件夹里。如果下载压缩包，就不会有 <code>.git</code> 这个文件夹。看到<a href=https://randomwaves.space/posts/build-a-hugo-site-from-zero/ target=_blank rel="noopener noreffer">这篇文章</a>说慎用前两种方式，还没有搞懂为什么。</p><p>安装好了之后需要指定主题，除了使用命令行之外，也可以直接在根目录的 config.toml 里添一行 <code>theme = 'LoveIt'</code>。名字要和主题文件夹的名字一模一样。</p><p><code>hugo new posts/first-post.md</code> 这条命令会默认在content 文件夹内创建 posts 文件夹，first-post 是文档的名字。posts 是路径，换成 <code>posts/tech/second-post.md</code> 的话，就是在 posts 之下建个 tech 文件夹，再在里面生成文档。使用这个命令行创建文档会自动在新建文档内添加<code>_default.md</code> 中定义的前置参数，比如标题、日期和是否为草稿等等，其他支持的参数可以参考主题文件夹内的同名文件。</p><p>运行 <code>hugo server -D</code> ，如果没有报错，浏览器内输入 localhost:1313 就可以看到网站了。<code>-D</code> 的意思是也会显示前置参数中 <code>draft</code> 设置为 <code>true</code> 的文档。 官网的 <a href=https://gohugo.io/getting-started/quick-start/ target=_blank rel="noopener noreffer">Getting Started</a> 说得挺清楚。</p><h3 id=网站装修>网站装修</h3><p>在原主题的基础上，我做了一点改动，具体在<a href=../brush/index.md rel>这篇记录</a>里。</p><h2 id=部署托管静态网站>部署托管静态网站</h2><h3 id=上传至-github-pages>上传至 Github Pages</h3><p>参照的是<a href=https://hongtaoh.com/cn/2021/03/02/personal-website-tutorial/#%e5%89%8d%e6%9c%9f%e5%87%86%e5%a4%87 target=_blank rel="noopener noreffer">郝鸿涛——如何零基础免费搭建个人网站（2021-03-02）</a>这篇中提供的方法。但是这篇教程中的 <code>gh-pages.yml</code> 有几个需要修改的地方：</p><ul><li>Github 的默认分支现在从 <code>master</code> 改成了 <code>main</code>（见<a href=https://github.com/github/renaming target=_blank rel="noopener noreffer">官方说明</a>）；</li><li><code>ubuntu-18.04</code> 这个版本到 2023-04-01 就不能用，需要改成 <code>ubuntu-latest</code>, <code>ubuntu-20.04</code>, 或者 <code>ubuntu-22.04</code>，详情见<a href=https://github.com/actions/runner-images title="GitHub Actions runner images repository" target=_blank rel="noopener noreffer">这个文档</a>；</li><li><code>node.js 12</code>被弃用了，需要更新，见<a href=https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions title="Github Actions 工作流语法" target=_blank rel="noopener noreffer">这里</a>；</li><li>LoveIt 主题使用了 SCSS ，这个是扩展版支持的，所以我添加了一行<code>extended: true</code>;</li></ul><p>如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-yml data-lang=yml><span class=line><span class=cl><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>github pages</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>on</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>push</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>branches</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=l>main </span><span class=w> </span><span class=c># Set a branch name to trigger deployment</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>jobs</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>deploy</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>runs-on</span><span class=p>:</span><span class=w> </span><span class=l>ubuntu-22.04</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>actions/checkout@v3</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>submodules</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>  </span><span class=c># Fetch Hugo themes (true OR recursive)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>fetch-depth</span><span class=p>:</span><span class=w> </span><span class=m>0</span><span class=w>    </span><span class=c># Fetch all history for .GitInfo and .Lastmod</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>token</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.PERSONAL_TOKEN }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Setup Hugo</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-hugo@v2</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>hugo-version</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;0.110.0&#39;</span><span class=w>    </span><span class=c># 修改为你的 hugo version</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>extended</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Build</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>hugo --minify</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-gh-pages@v3</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>github_token</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.PERSONAL_TOKEN }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>publish_branch</span><span class=p>:</span><span class=w> </span><span class=l>gh-pages</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>publish_dir</span><span class=p>:</span><span class=w> </span><span class=l>./public</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>cname</span><span class=p>:</span><span class=w> </span><span class=l>wisterias.one    </span><span class=w> </span><span class=c># 使用自定域名时需要这行</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=自定义域名>自定义域名</h3><h3 id=后续更新>后续更新</h3><h2 id=存储图片>存储图片</h2></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2023-03-18</span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Pinterest" data-sharer=pinterest data-url=https://wisterias.one/starting/><i class="fab fa-pinterest fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/hugo%E5%BB%BA%E7%AB%99/>hugo建站</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/brush/ class=prev rel=prev title=网站装修><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>网站装修</a>
+<a href=/trees/ class=next rel=next title=树>树<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11">LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2023</span><span>&nbsp; &nbsp;<span>Made with 🍂</span></span><p><a href=https://www.foreverblog.cn/go.html target=_blank><img src=https://img.foreverblog.cn/wormhole_3_tp.gif alt style=width:auto;height:32px;padding-bottom:1.5rem title=穿梭虫洞-随机访问十年之约友链博客></a></p></div></div></footer><!doctype html><html><head><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css><script src=https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js></script></head><body><div class=demo><div id=player1></div></div><script>const ap=new APlayer({container:document.getElementById("player1"),fixed:!0,autoplay:!1,mini:!0,theme:"#f8f4fc",loop:"all",order:"random",preload:"auto",volume:.5,mutex:!0,listFolded:!1,listMaxHeight:90,lrcType:0,audio:[{name:"Teo Torriatte",url:"/music/Teo Torriatte.mp3",artists:"Queen",cover:"/images/Teo Torriatte.jpg"}]})</script></body></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript src=/js/_custom.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},lightgallery:!0,twemoji:!0}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>

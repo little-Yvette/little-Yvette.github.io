@@ -3,34 +3,168 @@
 // 覆盖变量
 // ==============================
 
+// ========== Global ========== 11 //
+// Font and Line Height
+$global-font-family: system-ui, -apple-system, Segoe UI, Roboto, Emoji, Helvetica, Arial, sans-serif !default;
+$global-font-size: 16px !default;
+$global-font-weight: 400 !default;
+$global-line-height: 1.7rem;
+
+// Color of the background 18
+$global-background-color: #FCFBF8;
+$global-background-color-dark: #1C1C1E;
+
+// Color of the text 22
+$global-font-color: #221C11;
+
+// Color of the link
+$global-link-color-dark: #B59469;
+
 // Color of the hover link 35
-$global-link-hover-color: #4b2e2b;
-//棕茶
+$global-link-hover-color: #6d4618;
+$global-link-hover-color-dark: #D1D1D6;
+
+// Color of the border 38
+$global-border-color: #E6DDCC;
+
+// ========== Scrollbar ========== 43 //
+// Color of the scrollbar
+$scrollbar-color: #BDB9C5;
+
+// Color of the hover scrollbar
+$scrollbar-hover-color: #C4B087;
+// ========== Scrollbar ========== //
+
+// Color of the header background 65
+$header-background-color: #F7F4EE;
+
+// Color of the hover header item 69
+$header-hover-color: #221C11;
+
+// ========== Single Content ========== 78 //
+// Font size of the TOC
+$toc-title-font-size: 1.2rem !default;
+$toc-content-font-size: 0.9rem;
+$toc-title-color: #5a5c5b;
 
 // Color of the single link 84
-$single-link-color: #b8844f;
+$single-link-color: #8e5b1f;
+$single-link-color-dark: #D1D1D6;
 
 // Color of the hover single link 88
-$single-link-hover-color: #ca6924;
-//琥珀
+$single-link-hover-color: #903232;
+$single-link-hover-color-dark: #B59469;
 
 // Color of the link in pagination 106
-$pagination-link-color: #b8844f;
+$pagination-link-color: #9f6623;
+
+// ========== Code ========== 114//
+// Font family and size of the code
+$code-font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$code-font-size: .875rem !default;
+
+// Color of the code
+$code-color: #8e5b1f;
+$code-color-dark: #E5BF78 !default;
+
+// Color of the code background
+$code-background-color: #f4f1ec;
+$code-background-color-dark: #272C34 !default;
+
+$code-info-color: #616161;
+$code-info-color-dark: #b1b0b0 !default;
+
+// Color map of the code highlight
+$code-highlight-color-map: (
+  /* Parentheses */ "p": #a9a9b3,
+  /* Keyword */ "k": #b501a9,
+  /* KeywordConstant */ "kc": #b501a9,
+  /* KeywordDeclaration */ "kd": #b501a9,
+  /* KeywordNamespace */ "kn": #b501a9,
+  /* KeywordPseudo */ "kp": #b501a9,
+  /* KeywordReserved */ "kr": #b501a9,
+  /* KeywordType */ "kt": #b501a9,
+  /* Name */ "n": #333333,
+  /* NameAttribute */ "na": #2b77fa,
+  /* NameBuiltin */ "nb": #bd4242,
+  /* NameBuiltinPseudo */ "bp": #bd4242,
+  /* NameClass */ "nc": #cb8100,
+  /* NameConstant */ "no": #2b77fa,
+  /* NameDecorator */ "nd": #0086c1,
+  /* NameEntity */ "ni": #2b77fa,
+  /* NameException */ "ne": #2b77fa,
+  /* NameFunction */ "nf": #2b77fa,
+  /* NameFunctionMagic */ "fm": #1ccad6,
+  /* NameLabel */ "nl": #2b77fa,
+  /* NameNamespace */ "nn": #2b77fa,
+  /* NameOther */ "nx": #333333,
+  /* NameProperty */ "py": #2b77fa,
+  /* NameTag */ "nt": #2b77fa,
+  /* NameVariable */ "nv": #2b77fa,
+  /* NameVariableClass */ "vc": #2b77fa,
+  /* NameVariableGlobal */ "vg": #2b77fa,
+  /* NameVariableInstance */ "vi": #2b77fa,
+  /* NameVariableMagic */ "vm": #2b77fa,
+  /* Literal */ "l": #2aa198,
+  /* LiteralDate */ "ld": #2aa198,
+  /* LiteralString */ "s": #52932e,
+  /* LiteralStringAffix */ "sa": #52932e,
+  /* LiteralStringBacktick */ "sb": #52932e,
+  /* LiteralStringChar */ "sc": #52932e,
+  /* LiteralStringDelimiter */ "dl": #52932e,
+  /* LiteralStringDoc */ "sd": #52932e,
+  /* LiteralStringDouble */ "s2": #52932e,
+  /* LiteralStringEscape */ "se": #52932e,
+  /* LiteralStringHeredoc */ "sh": #52932e,
+  /* LiteralStringInterpol */ "si": #52932e,
+  /* LiteralStringOther */ "sx": #52932e,
+  /* LiteralStringRegex */ "sr": #52932e,
+  /* LiteralStringSingle */ "s1": #52932e,
+  /* LiteralStringSymbol */ "ss": #52932e,
+  /* LiteralNumber */ "m": #e2893c,
+  /* LiteralNumberBin */ "mb": #e2893c,
+  /* LiteralNumberFloat */ "mf": #e2893c,
+  /* LiteralNumberHex */ "mh": #e2893c,
+  /* LiteralNumberInteger */ "mi": #e2893c,
+  /* LiteralNumberIntegerLong */ "il": #e2893c,
+  /* LiteralNumberOct */ "mo": #e2893c,
+  /* Operator */ "o": #f19b04,
+  /* OperatorWord */ "ow": #b501a9,
+  /* Comment */ "c": #a0a1a8,
+  /* CommentHashbang */ "ch": #a0a1a8,
+  /* CommentMultiline */ "cm": #a0a1a8,
+  /* CommentSingle */ "c1": #a0a1a8,
+  /* CommentSpecial */ "cs": #a0a1a8,
+  /* CommentPreproc */ "cp": #a0a1a8,
+  /* CommentPreprocFile */ "cpf": #a0a1a8,
+  /* Generic */ "g": #e72d40,
+  /* GenericDeleted */ "gd": #e72d40,
+  /* GenericEmph */ "ge": #e72d40,
+  /* GenericError */ "gr": #e72d40,
+  /* GenericHeading */ "gh": #e72d40,
+  /* GenericInserted */ "gi": #bd4242,
+  /* GenericOutput */ "go": #e72d40,
+  /* GenericPrompt */ "gp": #e72d40,
+  /* GenericStrong */ "gs": #e72d40,
+  /* GenericSubheading */ "gu": #e72d40,
+  /* GenericTraceback */ "gt": #e72d40,
+  /* TextWhitespace */ "w": #bbbbbb,
+);
 
 // ========== Admonition ========== //
 // Color list of admonition [$type $color $background-color, ... ]
 $admonition-color-list:
-  "note" #74759b rgba(24, 184, 48, 0.1),
+  "note" #BCAFCF rgba(188, 175, 207, 0.1),
   "abstract" #00b0ff rgba(0, 176, 255, 0.1),
   "info" #00b8d4 rgba(83, 211, 230, 0.1),
   "tip" #00bfa5 rgba(0, 191, 165, 0.1),
   "success" #00c853 rgba(0, 200, 83, 0.1),
   "question" #64dd17 rgba(100, 221, 23, 0.1),
-  "warning" #ff9100 rgba(255, 145, 0, 0.1),
+  "warning" #de964a rgba(222, 150, 74, 0.1),
   "failure" #ff5252 rgba(255, 82, 82, 0.1),
   "danger" #ff1744 rgba(68, 138, 255, 0.1),
   "bug" #f50057 rgba(255, 23, 68, 0.1),
   "example" #651fff rgba(101, 31, 255, 0.1),
   "quote" #9e9e9e rgba(159, 159, 159, 0.1),
-  !default;
+  ;
 // ========== Admonition ========== //

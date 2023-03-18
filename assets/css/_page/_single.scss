@@ -53,11 +53,20 @@
   .content {
     > h2 {
       font-size: 1.5rem;
-
+      padding-top: 1em;
+      
       & code {
         font-size: 1.25rem;
       }
+
+      border-bottom: 1px dashed #BDB9C5;
+      padding-bottom: 1.2em;
+        
+        [theme=dark] & {
+          border-bottom: 1px dashed #36363a;
+        }
     }
+    
 
     > h3 {
       font-size: 1.375rem;
@@ -95,29 +104,33 @@
         font-weight: bolder;
       }
     }
-
+  /*   
     > h2,
     > h3,
     > h4,
     > h5,
     > h6 {
       > .header-mark::before {
-        content: "|";
-        margin-right: .3125rem;
+        content: "<";
+        padding-right: 5.125rem;
         color: $single-link-color;
+        visibility: hidden;
 
         [theme=dark] & {
           color: $single-link-color-dark;
         }
       }
     }
-
-    > h2 > .header-mark::before {
-      content: "#";
+            .header-mark:hover::before {
+              visibility: visible;
     }
-
+     
+    > h2 > .header-mark::before {
+      content: "";
+    }
+  */ 
     p {
-      margin: .5rem 0;
+      margin: 1.0rem 0;
     }
 
     b, strong {
@@ -132,15 +145,47 @@
 
     a {
       @include overflow-wrap(break-word);
-
-      [theme=dark] & b, [theme=dark] & strong {
-        color: $single-link-color-dark;
-      }
+//growing background hover effect
+      text-decoration: none;
+      color: $single-link-color;
+      font-weight: 700; 
+      position: relative;
+       
+       [theme=dark] & {
+        color: #e5e5e6;
+        font-weight: 400;
+       }
     }
 
-    [theme=dark] a:hover b, [theme=dark] a:hover strong {
-      color: $single-link-hover-color-dark;
+    a::before {
+      content: '';
+      background-color: hsla(42, 32%, 86%, 0.9);
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+      width: 100%;
+      height: 4px;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+
+       [theme=dark] & {
+        background-color: hsla(34, 34%, 62%, 0.5);
+       }
     }
+    
+    a:hover {
+      color: #2e561a;
+       
+       [theme=dark] & {
+        color: #fcfaf8;
+       }
+    }
+    
+    a:hover::before {
+      bottom: 0;
+      height: 100%;
+    }
+//growing background hover effect
 
     ul, ol {
       margin: .5rem 0;
@@ -148,7 +193,7 @@
     }
 
     ul {
-      list-style-type: disc;
+      list-style-type: circle;
     }
 
     ruby {
@@ -347,3 +392,5 @@
 .lg-toolbar .lg-icon::after {
   color: #999;
 }
+
+      

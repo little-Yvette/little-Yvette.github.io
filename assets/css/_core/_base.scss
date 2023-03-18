@@ -11,7 +11,7 @@ html {
   main [id] {
     scroll-margin-top: calc(var(--header-height) + .5rem);
   }
-
+ 
   h1 {
     line-height: 125%;
   }
@@ -25,9 +25,11 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background-color: $scrollbar-color;
+  border-radius: 15px;
 
   &:hover {
     background-color: $scrollbar-hover-color;
+    border-radius: 15px;
   }
 }
 

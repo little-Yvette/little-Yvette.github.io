@@ -261,81 +261,81 @@ enableEmoji = false
   # Social config in home page
   # 主页的社交信息设置
   # [params.social]
-    GitHub = ""
-    Linkedin = ""
-    Twitter = ""
-    Instagram = ""
-    Facebook = ""
-    Telegram = ""
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    Discord = ""
-    DiscordInvite = ""
-    Lichess = ""
-    ORCID = ""
-    Pleroma = ""
-    Kaggle = ""
-    MediaWiki= ""
-    Plume = ""
-    HackTheBox = ""
-    RootMe= ""
-    Email = ""
-    Phone = ""
-    RSS = ""
+  # GitHub = ""
+  # Linkedin = ""
+  # Twitter = ""
+  # Instagram = ""
+  # Facebook = ""
+  #  Telegram = ""
+  # Medium = ""
+  #  Gitlab = ""
+  #  Youtubelegacy = ""
+  #  Youtubecustom = ""
+  #  Youtubechannel = ""
+  #  Tumblr = ""
+  #  Quora = ""
+  #  Keybase = ""
+  #  Pinterest = ""
+  #  Reddit = ""
+  #  Codepen = ""
+  #  FreeCodeCamp = ""
+  #  Bitbucket = ""
+  #  Stackoverflow = ""
+  #  Weibo = ""
+  #  Odnoklassniki = ""
+  #  VK = ""
+  #  Flickr = ""
+  #  Xing = ""
+  #  Snapchat = ""
+  #  Soundcloud = ""
+  #  Spotify = ""
+  #  Bandcamp = ""
+  #  Paypal = ""
+  #  Fivehundredpx = ""
+  #  Mix = ""
+  #  Goodreads = ""
+  #  Lastfm = ""
+  #  Foursquare = ""
+  #  Hackernews = ""
+  #  Kickstarter = ""
+  #  Patreon = ""
+  #  Steam = ""
+  #  Twitch = ""
+  #  Strava = ""
+  #  Skype = ""
+  #  Whatsapp = ""
+  # Zhihu = ""
+  #  Douban = ""
+  #  Angellist = ""
+  #  Slidershare = ""
+  #  Jsfiddle = ""
+  #  Deviantart = ""
+  #  Behance = ""
+  #  Dribbble = ""
+  #  Wordpress = ""
+  #  Vine = ""
+  #  Googlescholar = ""
+  #  Researchgate = ""
+  #  Mastodon = ""
+  #  Thingiverse = ""
+  #  Devto = ""
+  #  Gitea = ""
+  #  XMPP = ""
+  #  Matrix = ""
+  #  Bilibili = ""
+  #  Discord = ""
+  #  DiscordInvite = ""
+  #  Lichess = ""
+  #  ORCID = ""
+  #  Pleroma = ""
+  #  Kaggle = ""
+  #  MediaWiki= ""
+  #  Plume = ""
+  #  HackTheBox = ""
+  #  RootMe= ""
+  #  Email = ""
+  #  Phone = ""
+  #  RSS = ""
 
   # Page global config
   # 文章页面全局配置
@@ -489,9 +489,9 @@ enableEmoji = false
         # automatically adapt the current theme i18n configuration when empty
         # 为空时自动适配当前主题 i18n 配置
         lang = ""
-        visitor = true
-        recordIP = true
-        highlight = true
+        visitor = false
+        recordIP = false
+        highlight = false
         enableQQ = false
         serverURLs = ""
         # emoji data file name, default is "google.yml"
@@ -523,7 +523,7 @@ enableEmoji = false
         limit = 5
         height = ""
         color = ""
-        colorful = true
+        colorful = false
         dislikes = false
         outlined = false
       # Commento comment config (https://commento.io/)
@@ -569,7 +569,7 @@ enableEmoji = false
         # Or 或者
         # someCSS = "https://cdn.example.com/some.css"
       [params.page.library.js]
-        # someJavascript = "js/_custom.js"
+        someJavascript = "js/_custom.js"
         # located in "assets/" 位于 "assets/"
         # Or 或者
         # someJavascript = "https://cdn.example.com/some.js"
@@ -604,11 +604,11 @@ enableEmoji = false
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
   # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
-    google = ""
-    bing = ""
-    yandex = ""
-    pinterest = ""
-    baidu = ""
+  #  google = ""
+  #  bing = ""
+  #  yandex = ""
+  #  pinterest = ""
+  #  baidu = ""
 
   # Site SEO config
   # 网站 SEO 配置
@@ -629,7 +629,7 @@ enableEmoji = false
       id = ""
       # whether to anonymize IP
       # 是否匿名化用户 IP
-      anonymizeIP = true
+      anonymizeIP = false
     # Fathom Analytics
     [params.analytics.fathom]
       id = ""
@@ -712,4 +712,10 @@ enableEmoji = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
+
+  # Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
+  # Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
+  [Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
 

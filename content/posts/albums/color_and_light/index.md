@@ -13,6 +13,4 @@ resources:
 - name: "featured-image-preview"
   src: "featured-image-preview.jpg"
 ---
-{{< image src="/images/0202-1000-75-1504.jpg" caption="Riverside" src_s="/images/0202-1000-75.jpg" src_l="/images/0202-1000-75.jpg" >}}
 
-{{< image src="/images/20220223-IMGP1638.jpg" caption="River" src_s="/images/20220223-IMGP1638.jpg" src_l="/images/20220223-IMGP1638.jpg" >}}

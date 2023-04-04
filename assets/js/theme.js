@@ -1094,7 +1094,7 @@ if (document.readyState !== 'loading') {
   document.addEventListener('DOMContentLoaded', themeInit, false);
 }
 
- /* click heart */
+ /* click heart 
 
 ! function (e, t, a) {
   function n() {
@@ -1150,3 +1150,5 @@ if (document.readyState !== 'loading') {
           setTimeout(e, 1e3 / 60)
       }, n()
 }(window, document);
+
+*/

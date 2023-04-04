@@ -2,7 +2,7 @@ baseURL = 'https://wisterias.one'
 languageCode = 'en-us'
 title = 'A Tiny Park'
 theme = 'LoveIt'
-defaultContentLanguage = ["en", "zh-cn"]
+defaultContentLanguage = "zh-cn"
 # languageCode = ["en", "zh-CN"]
 # languageName = ["English", "简体中文"]
 hasCJKLanguage = true
@@ -154,6 +154,14 @@ enableEmoji = false
     name = "盒子"
     url = "/categories/"
     title = ""
+  [[menu.main]]
+      weight = 4
+      identifier = "about"
+      pre = ""
+      post = ""
+      name = "关于t"
+      url = "/about/"
+      title = ""
 
   # List (category or tag) page config
   # List (目录或标签) 页面配置
@@ -179,7 +187,7 @@ enableEmoji = false
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
     # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
-    svgFavicon = ""
+    svgFavicon = "/images/water.svg"
     # Android browser theme color
     # Android 浏览器主题色
     themeColor = "#ffffff"
@@ -348,7 +356,7 @@ enableEmoji = false
     hiddenFromSearch = false
     # whether to enable twemoji
     # 是否使用 twemoji
-    twemoji = true
+    twemoji = false
     # whether to enable lightgallery
     # 是否使用 lightgallery
     lightgallery = true
@@ -564,12 +572,12 @@ enableEmoji = false
     # 第三方库配置
     [params.page.library]
       [params.page.library.css]
-        # someCSS = "some.css"
+        # someCSS = "css/_custom.scss"
         # located in "assets/" 位于 "assets/"
         # Or 或者
         # someCSS = "https://cdn.example.com/some.css"
       [params.page.library.js]
-        someJavascript = "assets/js/_custom.js"
+        someJavascript = "js/some.js"
         # located in "assets/" 位于 "assets/"
         # Or 或者
         # someJavascript = "https://cdn.example.com/some.js"
@@ -719,3 +727,43 @@ enableEmoji = false
   # posts = ":year/:month/:filename"
   posts = ":filename"
 
+[languages]
+[languages.zh-cn]
+    weight = 1
+    languageCode = "zh-CN"
+    languageName = "简体中文"
+    hasCJKLanguage = true
+    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+    [languages.zh-cn.menu]
+      [[languages.zh-cn.menu.main]]
+        weight = 1
+        identifier = "posts"
+        pre = ""
+        post = ""
+        name = "文档"
+        url = "/posts/"
+        title = ""
+      [[languages.zh-cn.menu.main]]
+        weight = 2
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "标签"
+        url = "/tags/"
+        title = ""
+      [[languages.zh-cn.menu.main]]
+        weight = 3
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "盒子"
+        url = "/categories/"
+        title = ""
+      [[languages.zh-cn.menu.main]]
+        weight = 4
+        identifier = "about"
+        pre = ""
+        post = ""
+        name = "关于"
+        url = "/about/"
+        title = ""

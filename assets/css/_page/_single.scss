@@ -4,7 +4,7 @@
   .single-title {
     margin: 2rem 0 .5rem;
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: bolder;
     line-height: 140%;
   }
 
@@ -18,6 +18,7 @@
   .post-meta {
     font-size: .875rem;
     color: $global-font-secondary-color;
+    margin-left: -0.35em; //custom-datetime-align
 
     span {
       display: inline-block;
@@ -49,7 +50,7 @@
       width: 100%;
     }
   }
-
+/* custom-increase h2 padding */
   .content {
     > h2 {
       font-size: 1.5rem;
@@ -66,7 +67,7 @@
           border-bottom: 1px dashed #36363a;
         }
     }
-    
+  /* custom-increase h2 padding */   
 
     > h3 {
       font-size: 1.375rem;
@@ -104,31 +105,36 @@
         font-weight: bolder;
       }
     }
-  /*   
+
+  // custom-icon before the h//
     > h2,
     > h3,
     > h4,
     > h5,
     > h6 {
-      > .header-mark::before {
-        content: "<";
-        padding-right: 5.125rem;
-        color: $single-link-color;
-        visibility: hidden;
-
-        [theme=dark] & {
-          color: $single-link-color-dark;
+        
+        .header-mark {
+          visibility: hidden;
         }
-      }
+        
+      > .header-mark::before {
+              content: '\1f342';
+              position:absolute;
+              margin-left: -2.15em;
+              padding-right: 1.15em;
+              color: $single-link-color;
+
+              [theme=dark] & {
+              color: $single-link-color-dark;
+              }
+         }
     }
-            .header-mark:hover::before {
-              visibility: visible;
+
+    :hover .header-mark {
+      visibility: visible;
     }
-     
-    > h2 > .header-mark::before {
-      content: "";
-    }
-  */ 
+  // custom-icon before the h//
+
     p {
       margin: 1.0rem 0;
     }
@@ -143,49 +149,49 @@
 
     @include link(false, false);
 
-    a {
+    /* custom-growing bg hover effect */
+    :is(p, ul) a {
       @include overflow-wrap(break-word);
-//growing background hover effect
       text-decoration: none;
       color: $single-link-color;
       font-weight: 700; 
       position: relative;
        
-       [theme=dark] & {
-        color: #e5e5e6;
-        font-weight: 400;
-       }
-    }
+      [theme=dark] & {
+      color: #e5e5e6;
+      font-weight: 400;
+      }
 
-    a::before {
-      content: '';
-      background-color: hsla(42, 32%, 86%, 0.9);
-      position: absolute;
-      left: 0;
-      bottom: 3px;
-      width: 100%;
-      height: 4px;
-      z-index: -1;
-      transition: all 0.3s ease-in-out;
+         &::before {
+            content: '';
+            background-color: hsla(42, 32%, 86%, 0.9);
+            position: absolute;
+            left: 0;
+            bottom: 3px;
+            width: 100%;
+            height: 4px;
+            z-index: -1;
+            transition: all 0.3s ease-in-out;
+  
+            [theme=dark] & {
+            background-color: hsla(34, 34%, 62%, 0.5);
+            }
+      }
 
-       [theme=dark] & {
-        background-color: hsla(34, 34%, 62%, 0.5);
-       }
+         &:hover {
+            color: #2e561a;
+         
+           [theme=dark] & {
+            color: #fcfaf8;
+           }
+      }
+
+         &:hover::before {
+            bottom: 0;
+            height: 100%;
+      }
     }
-    
-    a:hover {
-      color: #2e561a;
-       
-       [theme=dark] & {
-        color: #fcfaf8;
-       }
-    }
-    
-    a:hover::before {
-      bottom: 0;
-      height: 100%;
-    }
-//growing background hover effect
+    /* custom-growing bg hover effect */
 
     ul, ol {
       margin: .5rem 0;
@@ -392,5 +398,3 @@
 .lg-toolbar .lg-icon::after {
   color: #999;
 }
-
-      

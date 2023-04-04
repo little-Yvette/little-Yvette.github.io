@@ -5,8 +5,9 @@
 
 // ========== Global ========== 11 //
 // Font and Line Height
-$global-font-family: system-ui, -apple-system, Segoe UI, Roboto, Emoji, Helvetica, Arial, sans-serif !default;
-$global-font-size: 16px !default;
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css');
+$global-font-family: "LXGW WenKai", sans-serif !important;
+$global-font-size: 18px;
 $global-font-weight: 400 !default;
 $global-line-height: 1.7rem;
 
@@ -17,7 +18,11 @@ $global-background-color-dark: #1C1C1E;
 // Color of the text 22
 $global-font-color: #221C11;
 
-// Color of the link
+// Color of the secondary text
+$global-font-secondary-color: #6F6F7C;
+$global-font-secondary-color-dark: #88888b;
+
+// Color of the link 30
 $global-link-color-dark: #B59469;
 
 // Color of the hover link 35
@@ -34,6 +39,11 @@ $scrollbar-color: #BDB9C5;
 // Color of the hover scrollbar
 $scrollbar-hover-color: #C4B087;
 // ========== Scrollbar ========== //
+
+// Font family and size of the header title
+$header-title-font-family: $global-font-family;
+$header-title-font-size: 1.7rem !default;
+
 
 // Color of the header background 65
 $header-background-color: #F7F4EE;

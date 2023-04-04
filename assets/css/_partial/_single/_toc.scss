@@ -3,18 +3,19 @@
     font-size: var(--toc-title-font-size);
     font-weight: bold;
     text-transform: uppercase;
+    padding-left: .4rem;
   }
 
   .toc-content {
     font-size: var(--toc-content-font-size);
-
+    
     ul {
       text-indent: -0.85rem;
       padding-left: .8rem;
       list-style: none;
 
       a:first-child::before {
-        content: "|";
+        content: "";
         font-weight: bolder;
         margin-right: .5rem;
         color: $single-link-color;
@@ -27,6 +28,23 @@
       ul {
         padding-left: 1.5rem;
       }
+
+        a {
+          color: $global-font-secondary-color;
+
+          [theme=dark] & {
+            color: $global-font-secondary-color-dark;
+          }
+           
+           &:hover {
+            color: $global-link-hover-color;
+
+             [theme=dark] & {
+              color: $global-link-hover-color-dark;
+             }
+           }
+        }
+
     }
   }
 
@@ -53,7 +71,7 @@
   width: 10000px;
   max-width: 0;
   padding: 0 .8rem;
-  border-left: 4px solid $global-border-color;
+  /*border-left: 4px solid $global-border-color;*/
   @include overflow-wrap(break-word);
   box-sizing: border-box;
   top: 10rem;
@@ -66,9 +84,9 @@
 
   @include blur;
 
-  [theme=dark] & {
+  /*[theme=dark] & {
     border-left-color: $global-border-color-dark;
-  }
+  }*/
 
   .toc-title {
     margin: .8rem 0;
@@ -94,18 +112,20 @@
     }
 
     a.active {
-      font-weight: bold;
+      font-weight: 700;
       color: $single-link-color;
-
+    
       [theme=dark] & {
         color: $single-link-color-dark;
       }
 
       &::before {
-        color: $single-link-hover-color;
-
+        border-left: .125rem solid #8e5b1f;
+        /*color: $single-link-hover-color;*/
+        
         [theme=dark] & {
-          color: $single-link-hover-color-dark;
+          border-left: .125rem solid #D1D1D6;
+          /*color: $single-link-hover-color-dark;*/
         }
       }
     }

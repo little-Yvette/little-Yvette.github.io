@@ -8,4 +8,3 @@ toc:
   enable: false
   auto: false
 ---
-

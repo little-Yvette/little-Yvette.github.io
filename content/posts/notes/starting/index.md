@@ -30,7 +30,7 @@ code:
 
 参考：
 - [Hugo官网](https://gohugo.io/)（hugo的介绍、说明文档、安装下载方式以及模板都可以在官网找到，✨有些模板也会提供比较详细的用户文档，从安装模板到自定义网站）
-- [MDN文档——Web入门概述](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web) 👈 这里也有[HTML]^(超文本标记语言)，[CSS]^(层叠样式表)等等教程，能看得懂一点的话，照葫芦画瓢就容易些；
+- [MDN文档——Web入门概述](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web) 👈 这里也有[HTML]^(超文本标记语言)，[CSS]^(层叠样式表)等等教程，能看懂一点的话，照葫芦画瓢就容易些；
 - [Git Cheatsheet](https://cs.fyi/guide/git-cheatsheet "Git 常用命令")
 - [郝鸿涛——如何零基础免费搭建个人网站（2021-03-02）](https://hongtaoh.com/cn/2021/03/02/personal-website-tutorial/#前期准备)
 - [山茶花舍](https://irithys.com/categories/%E5%9C%A8%E5%B0%8F%E5%B1%8B%E9%87%8C%E6%94%BE%E4%B8%80%E6%9C%B5%E8%8A%B1%E5%84%BF/)。这里有不少有意思的教程，而且网站是我喜欢的风格。
@@ -200,6 +200,7 @@ jobs:
 ```
 
 ---
+
 后面的部分我还没写
 
 <!--

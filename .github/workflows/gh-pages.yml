@@ -14,7 +14,7 @@ jobs:
           node-version: 16
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          ssh-key: ${{ secrets.0405key }}
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:

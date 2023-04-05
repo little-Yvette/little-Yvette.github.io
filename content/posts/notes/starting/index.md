@@ -156,6 +156,9 @@ title = 'My New Hugo Site'
 
 参照的是[郝鸿涛——如何零基础免费搭建个人网站（2021-03-02）](https://hongtaoh.com/cn/2021/03/02/personal-website-tutorial/#前期准备)这篇中提供的方法。这篇教程中的`gh-pages.yml` 有几个需要修改的地方：
 
+后面的部分我还没写......好
+
+<!--
 - Github 的默认分支现在从 `master` 改成了 `main`（见[官方说明](https://github.com/github/renaming)）。但我看了其他的教程，这个修改应该不是必须的；
 - `ubuntu-18.04` 这个版本到 2023-04-01 就不能用，需要改成 `ubuntu-latest`, `ubuntu-20.04`, 或者 `ubuntu-22.04`，详情见[这个文档](https://github.com/actions/runner-images "GitHub Actions runner images repository")；
 - `node.js 12`被弃用了，需要更新，见[这里](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions "Github Actions 工作流语法")；
@@ -201,9 +204,9 @@ jobs:
 
 ---
 
-后面的部分我还没写
 
-<!--
+
+
 ### 自定义域名
 
 ### 后续更新

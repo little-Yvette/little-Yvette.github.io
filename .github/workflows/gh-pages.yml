@@ -9,12 +9,12 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
         with:
+          node-version: 16
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          token: ${{ secrets.PERSONAL_TOKEN }}
-
+          ssh-key: ${{ secrets.0405key }}
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:

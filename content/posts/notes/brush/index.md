@@ -2,6 +2,7 @@
 title: "网站装修"
 date: 2023-04-04
 draft: false
+weight: 5
 author: "L."
 categories: ["记录"]
 tags: ["hugo建站"]
@@ -53,7 +54,7 @@ $global-font-family: "LXGW WenKai", sans-serif;
 
 ### 删掉标题的项目符号
 
-不太喜欢主题自带的次级标题前的项目符号。在这个主题里，文内标题的样式是在 `assets\css\_page\single.scss` 这个文件里定义的，我在 `.content >h2` 这里添加了两行，以在 h2 标题下添加分割线，拉开间距。
+不太喜欢主题自带的次级标题前的项目符号。在这个主题里，文内标题的样式是在 `assets\css\_page\single.scss` 这个文件里定义的，在 `.content >h2` 这里添加了两行，以在 h2 标题下添加分割线，拉开间距。
 
 ``` scss
 border-bottom: 1px dashed #BDB9C5;
@@ -95,7 +96,7 @@ padding-bottom: 1.2em;
 
 ### 给文内链接换个悬停效果
 
-主题默认超链接用蓝色来表示，鼠标滑到链接时变成红色，但是我在 Stack 主题里看到了更喜欢的效果。同样在上面的那个`single.scss`中更改。Markdown 中的超链接就是 html 中的`<a>`。元素检查模式下选中想要更改的元素，在样式一栏可以看到这个元素在哪个文件里。代码来自 [这篇文章](https://css-tricks.com/css-link-hover-effects/ "Creative-Ideas-for-CSS-Link-Hover-Effects") 中的 growing background hover effect。我改了颜色，并且加上了暗色模式下适用的。
+主题默认超链接用蓝色来表示，鼠标滑到链接时变成红色，但是我在 Stack 主题里看到了更喜欢的效果。同样在上面的那个`single.scss`中更改。Markdown 中的超链接就是 html 中的`<a>`。元素检查模式下选中想要更改的元素，在样式一栏可以看到这个元素在哪个文件里。代码来自 [这篇文章](https://css-tricks.com/css-link-hover-effects/ "Creative-Ideas-for-CSS-Link-Hover-Effects") 中的 growing background hover effect。改了颜色，并且加上了暗色模式下适用的。
 
 ``` scss
 :is(p, ul) a {
@@ -142,7 +143,7 @@ padding-bottom: 1.2em;
     /* custom-growing bg hover effect */
 ```
 
-简单更改了这个悬停效果，以为万事大吉了。后来发现和文档里的标题样式有冲突，因为标题同样使用了`<a>`标签，我猜可能是因为这个。需要让这个效果只作用于自己在文档里添加的超链接。目前的解决办法是将选择器写成`:is(p, ul) a`，选择`<p>`和`<ul>`标签内的`<a>`。不知道还有没有别的办法。暂时没有产生更让我掉 san 值的画面，除了移动端这个效果无效以及换行了的链接悬停背景不会出现。
+简单更改了这个悬停效果，以为万事大吉了。后来发现和文档里的标题样式有冲突，因为标题同样使用了`<a>`标签，我猜可能是因为这个。需要让这个效果只作用于自己在文档里添加的超链接。目前的解决办法是将选择器写成`:is(p, ul) a`，选择`<p>`和`<ul>`标签内的`<a>`。不知道还有没有别的办法。暂时没有出现更诡异的画面，除了移动端这个效果无效以及换行了的链接悬停背景不会出现。
 
 ### 鼠标点击效果
 
@@ -213,7 +214,7 @@ padding-bottom: 1.2em;
 
 ### 目录样式
 
-忘记怎么改的了。改完这个之后发现点击目录无法跳转到页面指定位置，我以为是锚点的问题，检查过后发现是匹配的。偶然搜索时偶然看到[这篇文章](https://www.ariesme.com/posts/2019/add_toc_for_hugo/)中提到了这个问题，“toc模板......会将中文字符编码成%xx...这样 js 无法识别”。果然，换成英文标题就可以，我想着把网站设置成中文能不能解决呢，在配置文件中添加了简体中文后一切如常，没有变化。但知道具体问题之后再问 AI，它就给了一段代码：
+忘记怎么改的了。改完这个之后发现点击目录无法跳转到页面指定位置，我以为是锚点的问题，检查过后发现是匹配的。偶然搜索时看到[这篇文章](https://www.ariesme.com/posts/2019/add_toc_for_hugo/)中提到了这个问题，“toc模板......会将中文字符编码成%xx...这样 js 无法识别”。果然，换成英文标题就可以，我想着把网站设置成中文能不能解决呢，在配置文件中添加了简体中文后一切如常，没有变化。但知道具体问题之后再问 AI，它就给了一段代码：
 
 ``` js
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -232,7 +233,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 ## 添加虫洞
 
-点击虫洞会随机去一个十年之约成员的博客，我觉得还挺有意思的。虽然我没加入这个，可不影响访问其他人的网站。[十年之约官网](https://www.foreverblog.cn/notice/16.html)提供了 html 格式的链接 logo。我在 `layouts/partials/footer` 中添加了这两行：
+点击虫洞会随机去一个十年之约成员的博客，还挺有意思的。虽然我没加入这个，可不影响访问其他人的网站。[十年之约官网](https://www.foreverblog.cn/notice/16.html)提供了 html 格式的链接 logo。我在 `layouts/partials/footer` 中添加了这两行：
 
 ``` html
 <p>
@@ -248,7 +249,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 LoveIt 主题提供了文档内加音乐播放器的短代码，使用的是 APlayer 和 MetingJS 库，以及 APlayer 也有适合多个平台的[插件](https://github.com/DIYgod/APlayer)。短代码可以放在文档里，但不能全局使用。这个主题也没有 `custom.html` 文件，所以呢，在 Bing AI 的（~~指导~~）启发之下，我在 `\layouts\partials\` 下新建了一个 `music.html` 文件，复制了上边那篇文章里的代码。在根目录的 `static` 文件夹中建了 `images` 和 `music` 两个子文件夹用来存放本地资源。
 
-一开始添加音乐播放器的时候，出现了只有主页能播放音乐的问题，其他页面只有播放器那个空壳子，没有封面，没有音乐，显示 **an audio error has occurred**，控制台显示找不到资源。Bing AI 说可能是引用路径没写对哦，前面要加斜杠。在 `music` 这个属性中添加本地文件路径，要写做：
+一开始添加音乐播放器的时候，出现了只有主页能播放音乐的问题，其他页面只有播放器那个空壳子，没有封面，没有音乐，显示 **an audio error has occurred**，控制台显示找不到资源。Bing AI 说可能是引用路径没写对，前面要加斜杠。在 `music` 这个属性中添加本地文件路径，要写做：
 
 ``` js
 audio:[
@@ -362,8 +363,6 @@ img {
 }
 ```
 
-这段可能还是存在问题。
-
 ---
 
-做完这些之后我终于意识到自己只是喜欢搞点有的没的无用的东西。
+然后我终于意识到自己只是喜欢搞点有的没的无用的东西。

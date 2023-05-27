@@ -7,6 +7,7 @@ code {
   font-size: var(--code-font-size);
   font-family: var(--code-font-family);
   color: $code-color;
+  border-radius: 5px; //custom
 
   [theme=dark] & {
     color: $code-color-dark;

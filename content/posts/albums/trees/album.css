@@ -1,0 +1,44 @@
+div .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div .column {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.box {
+    margin: 1.8em 0.8em 0 0.8em;
+}
+
+.box img {
+    box-shadow: 0.3em 0.4em 0.4em rgba(0,0,0,0.3);
+}
+
+.text {
+    text-align: right;
+    padding: 1.2em 0.7em 0 0;
+    margin-bottom: 0.2em;
+}
+
+.line {
+    box-sizing: border-box;
+    width: 55%;
+    height: 1px;
+    border-bottom: solid #161209 1px;
+    margin: 0 0.7em 2.4em auto;
+    padding-bottom: 0.3em;
+    overflow: hidden;
+
+    [theme=dark] & {
+        border-bottom: solid #88888b 1px;
+      }
+}
+
+@media only screen and (max-width:575px) {
+    div .row {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+}

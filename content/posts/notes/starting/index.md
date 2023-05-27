@@ -2,6 +2,7 @@
 title: "建站记录"
 date: 2023-02-21T21:35:33+08:00
 draft: false
+weight: 4
 author: "L."
 categories: ["记录"]
 tags: ["hugo建站"]
@@ -34,7 +35,6 @@ code:
 - [Git Cheatsheet](https://cs.fyi/guide/git-cheatsheet "Git 常用命令")
 - [郝鸿涛——如何零基础免费搭建个人网站（2021-03-02）](https://hongtaoh.com/cn/2021/03/02/personal-website-tutorial/#前期准备)
 - [山茶花舍](https://irithys.com/categories/%E5%9C%A8%E5%B0%8F%E5%B1%8B%E9%87%8C%E6%94%BE%E4%B8%80%E6%9C%B5%E8%8A%B1%E5%84%BF/)。这里有不少有意思的教程，而且网站是我喜欢的风格。
-......
 
 ## Hugo部分
 
@@ -56,7 +56,7 @@ code:
 
 ### 安装主题
 
-这部分可以参考官网中的 [Getting Started](https://gohugo.io/getting-started/quick-start/) 或者主题的用户文档。大概有这么几步：
+这部分可以参考官网中的 [Getting Started](https://gohugo.io/getting-started/quick-start/) 或者主题的用户文档。这个网站使用的是 [LoveIt](https://themes.gohugo.io/themes/loveit/)。大概有这么几步：
 
 - 在终端使用`hugo new site`命令行新建一个网站文件夹；
 
@@ -148,13 +148,13 @@ title = 'My New Hugo Site'
 
 ### 网站装修
 
-在原主题的基础上，我做了一点改动，具体在[这篇记录](../brush/index.md)（打不开是因为我还不知道怎么转到那篇文档）里。emmmmm 关于 html 和 css 我只懂最基础的，装修是在其他人的代码上小修小改。逻辑什么的我还没有搞明白，放上去能用就行，要求不高。
+在原主题的基础上，我做了一点改动，具体在[这篇记录](../brush)里。emmmmm 关于 html 和 css 我只懂最基础的，装修是在其他人的代码上小修小改。逻辑什么的我还没有搞明白，放上去能用就行，要求不高。
 
 ## 部署托管静态网站
 
 ### 上传至 Github Pages
 
-参照的是[郝鸿涛——如何零基础免费搭建个人网站（2021-03-02）](https://hongtaoh.com/cn/2021/03/02/personal-website-tutorial/#前期准备)这篇中提供的方法。这篇教程中的`gh-pages.yml` 有几个需要修改的地方：
+参照的是[郝鸿涛——如何零基础免费搭建个人网站（2021-03-02）](https://hongtaoh.com/cn/2021/03/02/personal-website-tutorial/#前期准备)这篇中提供的方法。
 
 后面的部分我还没写......好
 

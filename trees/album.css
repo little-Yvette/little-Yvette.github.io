@@ -3,6 +3,11 @@ div .row {
   grid-template-columns: 1fr 1fr;
 }
 
+div .row-r {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
 div .column {
   display: grid;
   grid-template-rows: 1fr;

@@ -5,8 +5,8 @@
 
 // ========== Global ========== 11 //
 // Font and Line Height
-@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css');
-$global-font-family: "LXGW WenKai", sans-serif !important;
+@import url('https://cdn.jsdelivr.net/npm/cn-fontsource-source-han-serif-sc-vf-regular/font.css');
+$global-font-family: Roboto, "Source Han Serif SC VF", sans-serif !important;
 $global-font-size: 18px;
 $global-font-weight: 400 !default;
 $global-line-height: 1.8rem;
@@ -39,6 +39,12 @@ $scrollbar-color: #BDB9C5;
 // Color of the hover scrollbar
 $scrollbar-hover-color: #C4B087;
 // ========== Scrollbar ========== //
+
+// ========== Selection ========== //
+// Color of the selected text
+$selection-color: rgba(61, 110, 83, 0.25);
+$selection-color-dark: rgba(50, 112, 194, 0.4) !default;
+// ========== Selection ========== //
 
 // Font family and size of the header title
 $header-title-font-family: $global-font-family;

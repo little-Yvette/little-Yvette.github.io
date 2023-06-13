@@ -45,7 +45,7 @@
     }
   
     function s() {
-        return "rgb(236,138,164)" //change color of the heart 
+        return "#c4c3cb" //change color of the heart 
     }
     var l = [];
     e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame ||

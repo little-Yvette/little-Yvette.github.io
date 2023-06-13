@@ -1,9 +1,13 @@
 img {
   &.lazyload, &.lazyloading {
     @include object-fit(scale-down);
+    width: 100%;
+    height: 100%;
   }
 
   &.lazyloaded {
-    @include object-fit(contain);
+    @include object-fit(cover);
+    width: 100%;
+    height: 100%;
   }
 }

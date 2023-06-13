@@ -14,9 +14,10 @@
                     {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo %v">Hugo</a>` hugo.Version -}}
                     {{- $theme := .Scratch.Get "version" | printf `<a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt %v"> LoveIt</a>` -}}
                     {{- dict "Hugo" $hugo "Theme" $theme | T "poweredBySome" | safeHTML }}
+                    <span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>Made with 🍂</span></span>
                 </div>
             {{- end -}}
-
+            
             <div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork">
                 {{- /* Copyright year */ -}}
                 {{- if ne .Site.Params.footer.copyright false -}}
@@ -28,9 +29,9 @@
                     {{- else -}}
                     <span itemprop="copyrightYear">{{ now.Year }}</span>
                     {{- end -}}
-                {{- end -}}
-                <span>&nbsp; &nbsp;<span>Made with 🍂</span></span> 
-                <p><a href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:auto;height:32px;padding-bottom:1.5rem" title="穿梭虫洞-随机访问十年之约友链博客"></a></p>
+                    <span><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">&nbsp;|&nbsp; CC BY-NC-ND 4.0</a></span>
+                {{- end -}} 
+                <div><a href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:auto;height:32px;padding:0.8rem 0" title="穿梭虫洞-随机访问十年之约友链博客"></a></div>
 
                 {{- /* Author */ -}}
                 {{- if ne .Site.Params.footer.author false -}}
@@ -39,7 +40,7 @@
 
                 {{- /* License */ -}}
                 {{- with .Site.Params.footer.license -}}
-                    &nbsp;|&nbsp;<span class="license">{{ . | safeHTML }}</span>
+                &nbsp;|&nbsp;<span class="license">{{ . | safeHTML }}</span>
                 {{- end -}}
 
                 {{- /* ICP */ -}}

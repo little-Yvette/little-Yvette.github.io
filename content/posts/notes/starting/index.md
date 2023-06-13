@@ -1,7 +1,7 @@
 ---
 title: "建站记录"
 date: 2023-02-21T21:35:33+08:00
-draft: false
+draft: true
 weight: 4
 author: "L."
 categories: ["记录"]
@@ -24,7 +24,7 @@ code:
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Github](https://docs.github.com/zh/get-started)（需要注册账号）
 - [Hugo官网](https://gohugo.io/)
-- [Namesilo](https://www.namesilo.com/)
+- [NameSilo](https://www.namesilo.com/)
 - [Backblaze](https://www.backblaze.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - Bing AI

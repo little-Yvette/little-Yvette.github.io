@@ -4,8 +4,10 @@ date: 20123-03-01
 draft: false
 ---
 
-这里好像应该写点自我介绍。
+没有自我介绍，不会写。只是想加个页面，八成以后也不会写。
 
-但是没有，因为不会写。
+最讨厌自我介绍啦！
 
-只是想加个页面，八成以后也不会写。
+还没有装评论区。联系可以投递邮件至：stormyhaze@protonmail.com
+
+<div align="right"> <img src="/images/blobwitchtea.png" width = 64 /> </div>

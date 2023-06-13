@@ -97,12 +97,12 @@ resources:
      {{< image 
      src="https://img.wisterias.one/376290.jpg"
      src_s="https://img.wisterias.one/r3762.jpg"
-     alt="初春林中枯萎的树"
+     alt="林中枯萎的树"
      >}}
     </div>
   </div>
   <div class="text">
-    初春林中枯萎的树
+    林中枯萎的树
   </div>
   <div class="line">
   </div>
